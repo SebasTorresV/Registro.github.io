@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="container">
-        <form method="post" action="" name="contact-form">
+        <form method="post" action="" name="contact-form" id="registroForm">
             <h4 class="mb-4">Registro de Torneo</h4>
             <div class="form-group">
                 <input type="text" class="form-control" name="your-name" placeholder="Nombre" maxlength="50">
@@ -34,10 +34,11 @@
             <div class="form-group">
                 <input type="date" class="form-control" name="your-date" value="<?php echo date('Y-m-d'); ?>" required>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar Registro</button>
+            <button type="submit" class="btn btn-primary" id="submitButton">Enviar Registro</button>
         </form>
     </div>
 
     <script src="SheetJS.js"></script>
+    
 </body>
 </html>

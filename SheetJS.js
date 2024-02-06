@@ -9,3 +9,10 @@ form.addEventListener('submit', e => {
   .then(() => { window.location.reload(); })
   .catch(error => console.error('Error, no se pudo registrar', error.message))
 })
+
+        // Deshabilitar el botón de envío después de hacer clic
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('registroForm').addEventListener('submit', function() {
+                document.getElementById('submitButton').disabled = true;
+            });
+        });
