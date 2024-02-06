@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="" name="contact-form">
+            <h4 class="mb-4">Registro de Torneo</h4>
+            <div class="form-group">
+                <input type="text" class="form-control" name="your-name" placeholder="Nombre" maxlength="50">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="your-surname" placeholder="Apellido" maxlength="50">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="your-number" placeholder="Numero" maxlength="10">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="your-key" placeholder="Llave del Saber" maxlength="7">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="your-email" placeholder="Email" maxlength="100">
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="your-Tournoment">
+                    <option value="">Selecciona un Torneo</option>
+                    <option value="Fifa 2024">Fifa 2024</option>
+                    <option value="Super Smash Bros Ultimate">Super Smash Bros Ultimate</option>
+                    <option value="Mario Kart">Mario Kart</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="date" class="form-control" name="your-date" value="<?php echo date('Y-m-d'); ?>" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Registro</button>
+        </form>
+    </div>
+
+    <script src="SheetJS.js"></script>
+</body>
+</html>
