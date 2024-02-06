@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Datos de Hoja de Cálculo</title>
+</head>
+<body>
+    <h1>Datos de Hoja de Cálculo</h1>
+    <div id="datos"></div>
+
+    <script>
+        // Hacer una solicitud GET al script de Google Apps Script
+        fetch('https://script.google.com/macros/s/AKfycbzBafdMSJp1zVfwbyBOPjckP_k4GEvvtvHC1xA6h-UsUCw45NVDVG793AyvijB6i_ux/exec')
+        .then(response => response.json()) // Convertir la respuesta a JSON
+        .then(data => {
+            // Manipular los datos y mostrarlos en la página
+            var datosDiv = document.getElementById('datos');
+            var html = '<ul>';
+            data.forEach(row => {
+                html += '<li>' + row.join(' | ') + '</li>';
+            });
+            html += '</ul>';
+            datosDiv.innerHTML = html;
+        })
+        .catch(error => console.error('Error al obtener los datos:', error));
+    </script>
+</body>
+</html>
