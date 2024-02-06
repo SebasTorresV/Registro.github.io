@@ -16,3 +16,19 @@ form.addEventListener('submit', e => {
                 document.getElementById('submitButton').disabled = true;
             });
         });
+
+                // Obtenemos el elemento del campo de entrada del número
+                var numeroInput = document.getElementById('Numero');
+                // Limitamos la longitud del campo de entrada a 8 caracteres
+                numeroInput.addEventListener('keydown', function(event) {
+                    if (event.target.value.length === 8 && event.key !== 'Backspace' && event.key !== 'Delete') {
+                        event.preventDefault(); // Prevenimos la acción predeterminada si la longitud es igual a 8
+                    }
+                });
+        
+                // Validamos el valor ingresado para permitir solo dígitos numéricos
+                numeroInput.addEventListener('input', function(event) {
+                    // Eliminamos cualquier caracter que no sea un dígito numérico
+                    event.target.value = event.target.value.replace(/\D/g, '');
+                });
+        
