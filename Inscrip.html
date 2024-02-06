@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Datos de Hoja de Cálculo</title>
+    <title>Registros de Torneo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Datos de Hoja de Cálculo</h1>
-    <div id="datos"></div>
+    <div class="container">
+        <h4 class="mb-4">Registros de Torneo</h4>
+        <div class="table-responsive">
+            <table class="table table-striped" id="registroTabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Número</th>
+                        <th>Llave del Saber</th>
+                        <th>Email</th>
+                        <th>Torneo</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaRegistros">
+                    <!-- Aquí se mostrarán los registros -->
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <script>
-        // Hacer una solicitud GET al script de Google Apps Script
-        fetch('https://script.google.com/macros/s/AKfycbzBafdMSJp1zVfwbyBOPjckP_k4GEvvtvHC1xA6h-UsUCw45NVDVG793AyvijB6i_ux/exec')
-        .then(response => response.json()) // Convertir la respuesta a JSON
-        .then(data => {
-            // Manipular los datos y mostrarlos en la página
-            var datosDiv = document.getElementById('datos');
-            var html = '<ul>';
-            data.forEach(row => {
-                html += '<li>' + row.join(' | ') + '</li>';
-            });
-            html += '</ul>';
-            datosDiv.innerHTML = html;
-        })
-        .catch(error => console.error('Error al obtener los datos:', error));
-    </script>
+    <script src="read.js"></script>
 </body>
 </html>
