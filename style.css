@@ -46,20 +46,27 @@ select.form-control {
     box-sizing: border-box;
 }
 
-.btn-primary {
+.btn-primary, .btn-info {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 20px 30px; /* Ajusta el espacio de relleno */
+    padding: 18px 27px; /* Ajusta el espacio de relleno */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px; /* Ajusta el tamaño de fuente */
-    border-radius: 8px; /* Ajusta el radio de borde */
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-right: 10px; /* Ajusta el margen entre los botones */
 }
 
-.btn-primary:hover {
+.btn-info {
+    background-color: #003bfd;
+    margin-right: 0; /* Elimina el margen derecho del segundo botón */
+}
+
+.btn-primary:hover, .btn-info:hover {
     background-color: #45a049;
 }
+
