@@ -32,3 +32,8 @@ form.addEventListener('submit', e => {
                     event.target.value = event.target.value.replace(/\D/g, '');
                 });
         
+                // Obtener la fecha actual en el formato YYYY-MM-DD en la zona horaria local
+var fechaActual = new Date().toLocaleDateString('en-CA'); // Cambia 'en-CA' a la configuración de tu zona horaria si es diferente
+
+// Establecer la fecha actual como el valor del campo de entrada de fecha
+document.getElementById('fechaInput').value = fechaActual;
