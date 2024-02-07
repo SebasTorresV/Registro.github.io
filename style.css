@@ -1,72 +1,36 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    font-size: 17px; /* Ajusta el tamaño de fuente general */
-}
+        body {
+            background-color: #f8f9fa;
+        }
 
-.container {
-    max-width: 500px; /* Ajusta el ancho máximo del contenedor */
-    margin: 50px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px; /* Ajusta el espacio de relleno */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-h4 {
-    text-align: center;
-    margin-bottom: 40px; /* Ajusta el espacio inferior del título */
-    color: #332;
-    font-size: 24px; /* Ajusta el tamaño de fuente del título */
-}
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
 
-.form-group {
-    margin-bottom: 30px; /* Ajusta el espacio entre grupos de formulario */
-}
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
 
-.form-control {
-    border: 2px solid #ccc; /* Ajusta el grosor del borde */
-    border-radius: 8px; /* Ajusta el radio de borde */
-    padding: 20px; /* Ajusta el espacio de relleno */
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    width: 100%;
-    box-sizing: border-box;
-}
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
 
-select.form-control {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-repeat: no-repeat;
-    background-position-x: calc(100% - 15px);
-    background-position-y: center;
-    padding: 8px; /* Ajusta el espacio de relleno */
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    width: 100%;
-    box-sizing: border-box;
-}
+        .btn-info:hover {
+            background-color: #117a8b;
+            border-color: #117a8b;
+        }
 
-.btn-primary, .btn-info {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 18px 27px; /* Ajusta el espacio de relleno */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px; /* Ajusta el tamaño de fuente */
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-right: 10px; /* Ajusta el margen entre los botones */
-}
-
-.btn-info {
-    background-color: #4CAF50;
-    margin-right: 0; /* Elimina el margen derecho del segundo botón */
-}
-
-.btn-primary:hover, .btn-info:hover {
-    background-color: #45a049;
-}
-
+        .form-group {
+            margin-bottom: 20px;
+        }
