@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.table th,
+.table td {
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 768px) {
+    .table th,
+    .table td {
+        padding: 15px;
+    }
+}
+
+/* Ajusta el ancho de las columnas específicas */
+th.torneo-column {
+    width: 20%; /* Ajusta el ancho de la columna "Torneo" */
+}
+
+th.llave-saber-column {
+    width: 20%; /* Ajusta el ancho de la columna "Llave del Saber" */
+}
