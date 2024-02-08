@@ -6,36 +6,69 @@
     <title>Menú Principal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo semi-transparente para mejorar la legibilidad del texto */
-            padding: 20px;
+            background-color: #ffffff;
             border-radius: 10px;
-            margin-top: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
         }
 
         .button-container {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
             margin-top: 20px;
         }
 
         .button-container .btn {
-            margin: 10px;
+            margin-bottom: 10px;
             font-size: 18px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .button-container .btn:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 20px;
+            }
+
+            .button-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .button-container .btn {
+                flex: 1 0 calc(50% - 15px);
+                margin: 5px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center">Menú Principal</h2>
+        <h2 class="text-center mb-4">Menú Principal</h2>
         <div class="button-container">
             <a href="indexEA.html" class="btn btn-primary btn-lg">EA 2024</a>
             <a href="indexSmash.html" class="btn btn-secondary btn-lg">Super Smash Bros Ultimate</a>
             <a href="indexMK.html" class="btn btn-success btn-lg">Mario Kart 8 Deluxe</a>
-        </div>
-        <div class="button-container">
             <a href="BracktsEA.html" class="btn btn-info btn-lg">Brackets EA 2024</a>
             <a href="BracktsSmash.html" class="btn btn-info btn-lg">Brackets Super Smash Bros Ultimate</a>
             <a href="BracktsMK.html" class="btn btn-info btn-lg">Brackets Mario Kart 8 Deluxe</a>
