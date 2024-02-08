@@ -6,6 +6,18 @@
     <title>Registro de Torneo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .button-container .btn {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -37,9 +49,11 @@
             <div class="form-group">
                 <input type="date" class="form-control" name="Fecha" id="fechaInput" required>
             </div>
-            <button type="submit" class="btn btn-primary" id="submitButton">Enviar Registro</button>
-            <a href="Inscrip.html" class="btn btn-info ml-2">Personas Inscritas</a>
-            <button onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/1NN3Kqt55VQG8C59FB-S-EoKshL4OBkIH0BeE50fTVd8/edit?usp=sharing';" class="btn btn-success">Brackets</button>
+            <div class="button-container">
+                <button type="submit" class="btn btn-primary" id="submitButton">Enviar Registro</button>
+                <a href="Inscrip.html" class="btn btn-info">Personas Inscritas</a>
+                <button onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/1NN3Kqt55VQG8C59FB-S-EoKshL4OBkIH0BeE50fTVd8/edit?usp=sharing';" class="btn btn-success">Brackets</button>
+            </div>
         </form>
     </div>
 
