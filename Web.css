@@ -1,0 +1,13 @@
+/* Estilo para el contenedor del iframe */
+iframe {
+    border: 1px solid #ccc; /* Borde del iframe */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  /* Estilo para ajustar el tamaño del iframe */
+  iframe {
+    width: 100%; /* Ancho del iframe al 100% del contenedor */
+    height: 800px; /* Altura fija del iframe */
+  }
+  

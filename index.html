@@ -3,60 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Registro de Torneo</title>
+    <title>Menú Principal</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <style>
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.5); /* Añade un fondo semi-transparente para mejorar la legibilidad del texto */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
         .button-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             margin-top: 20px;
         }
 
         .button-container .btn {
-            margin-bottom: 10px;
+            margin: 10px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <form method="post" action="" name="contact-form" id="registroForm">
-            <h4 class="mb-4">Registro de Torneo</h4>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Nombre" placeholder="Nombre" maxlength="50" required>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Apellido" placeholder="Apellido" maxlength="50" required> 
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Numero" id="Numero" placeholder="Numero" maxlength="8" inputmode="numeric" pattern="[0-9]+" required>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" name="Llave" placeholder="Llave del Saber" maxlength="7" inputmode="numeric" pattern="[0-9]+" required>
-            </div>
-            <div class="form-group">
-                <input type="email" class="form-control" name="Email" placeholder="Email" maxlength="150" required>
-            </div>
-            <div class="form-group">
-                <select class="form-control" name="TipoTorneo">
-                    <option value="">Selecciona un Torneo</option>
-                    <option value="Fifa 2024">Fifa 2024</option>
-                    <option value="Super Smash Bros Ultimate">Super Smash Bros Ultimate</option>
-                    <option value="Mario Kart">Mario Kart</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <input type="date" class="form-control" name="Fecha" id="fechaInput" required>
-            </div>
-            <div class="button-container">
-                <button type="submit" class="btn btn-primary" id="submitButton">Enviar Registro</button>
-                <a href="Inscrip.html" class="btn btn-info">Personas Inscritas</a>
-                <button onclick="window.location.href = 'https://docs.google.com/spreadsheets/d/1NN3Kqt55VQG8C59FB-S-EoKshL4OBkIH0BeE50fTVd8/edit?usp=sharing';" class="btn btn-success">Brackets</button>
-            </div>
-        </form>
+        <h2 class="text-center">Menú Principal</h2>
+        <div class="button-container">
+            <a href="indexEA.html" class="btn btn-primary btn-lg">EA 2024</a>
+            <a href="indexSmash.html" class="btn btn-secondary btn-lg">Super Smash Bros Ultimate</a>
+            <a href="indexMK.html" class="btn btn-success btn-lg">Mario Kart 8 Deluxe</a>
+        </div>
+        <div class="button-container">
+            <a href="BracktsEA.html" class="btn btn-info btn-lg">Brackets EA 2024</a>
+            <a href="BracktsSmash.html" class="btn btn-info btn-lg">Brackets Super Smash Bros Ultimate</a>
+            <a href="BracktsMK.html" class="btn btn-info btn-lg">Brackets Mario Kart 8 Deluxe</a>
+        </div>
     </div>
 
-    <script src="SheetJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

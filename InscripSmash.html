@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de Torneo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="TableStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="m-0">Registros de Torneo</h4>
+            <!-- Botón para redirigir a otro HTML -->
+            <button onclick="window.location.href = 'BracktsSmash.html';" class="btn btn-primary">Ir al otro archivo</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped" id="registroTabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Torneo</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Llave del Saber</th>
+                        <th>Email</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaRegistros">
+                    <!-- Aquí se mostrarán los registros -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="readSmash.js"></script>
+</body>
+</html>
